@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Accredited CPD webinars for medical laboratory professionals. Enhance your skills with our evidence-based learning programs.">
     <meta name="keywords" content="medical laboratory, CPD, webinars, diagnostic, laboratory professionals, continuing education">
-    <meta name="author" content="Remian Diagnostic">
+    <meta name="author" content="Remian Diagnostics">
     
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <link rel="shortcut icon" href="static/img/favicon.jpg" type="image/x-icon">
-    <title>Remian Diagnostic - Accredited CPD for Medical Laboratory Professionals</title>
+    <title>Remian Diagnostics - Accredited CPD for Medical Laboratory Professionals</title>
     
     <style>
         :root {
@@ -85,10 +85,10 @@
         }
         
         .hero-section {
-            background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(26, 75, 140, 0.8)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(26, 75, 140, 0.8)), url('static/img/hero.jpg');
             background-size: cover;
             background-position: center;
-            padding: 120px 0;
+            padding: 100px 0;
             color: white;
         }
         
@@ -140,7 +140,7 @@
         }
         
         .team-img {
-            height: 250px;
+            height: 100%;
             object-fit: cover;
         }
         
@@ -169,6 +169,40 @@
             color: var(--accent-yellow);
             text-decoration: none;
         }
+        
+        .objective-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .objective-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .objective-list li:before {
+            content: counter(item) ".";
+            counter-increment: item;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+        
+        .motto-section {
+            background-color: var(--light-blue);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .motto-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -177,8 +211,8 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="static/img/favicon.jpg" width="40" height="40" class="d-inline-block align-top mr-2" alt="Remian Diagnostic Logo">
-                Remian Diagnostic
+                <img src="static/img/favicon.jpg" width="40" height="40" class="d-inline-block align-top mr-2" alt="Remian Diagnostics Logo">
+                Remian Diagnostics
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -204,7 +238,7 @@
                         <a class="nav-link" href="#faq">Help</a>
                     </li>
                     <li class="nav-item ml-2">
-                        <a class="btn btn-accent btn-sm" href="#">Register Now</a>
+                        <a class="btn btn-accent btn-sm" href="#">Register Here</a>
                     </li>
                 </ul>
             </div>
@@ -212,13 +246,14 @@
     </nav>
     <!-- Navigation section End -->
 
+
     <!-- Hero/Banner Section Start -->
     <section class="hero-section">
         <div class="container text-center">
-            <h1 class="display-4 font-weight-bold mb-4">Empowering Medical Laboratory Professionals Through Lifelong Learning</h1>
+            <h1 class="font-weight-bold mb-4" style="font-size: 2.5rem;">Advancing Knowledge through evidence based diagnosis to promote patient care</h1>
             <p class="lead mb-5">Accredited CPD Webinars Designed for Medical Laboratory Excellence</p>
             <div class="d-flex justify-content-center flex-wrap">
-                <a href="#" class="btn btn-accent btn-lg mx-2 my-2">Register Now</a>
+                <a href="#" class="btn btn-accent btn-lg mx-2 my-2">Register Here</a>
                 <a href="#webinars" class="btn btn-outline-light btn-lg mx-2 my-2">Upcoming Webinars</a>
             </div>
         </div>
@@ -238,7 +273,7 @@
                             <h3 class="card-title">Advances in Molecular Diagnostics</h3>
                             <p class="card-text">Explore the latest developments in molecular diagnostic techniques and their application in modern laboratory medicine.</p>
                             <p><i class="fas fa-globe-americas mr-2"></i> <strong>Venue:</strong> Online Webinar</p>
-                            <a href="#" class="btn btn-primary">Register Now</a>
+                            <a href="#" class="btn btn-primary">Register Here</a>
                         </div>
                     </div>
                     
@@ -248,7 +283,7 @@
                             <h3 class="card-title">Laboratory Quality Management Systems</h3>
                             <p class="card-text">Learn how to implement and maintain effective quality management systems in your laboratory setting.</p>
                             <p><i class="fas fa-globe-americas mr-2"></i> <strong>Venue:</strong> Online Webinar</p>
-                            <a href="#" class="btn btn-primary">Register Now</a>
+                            <a href="#" class="btn btn-primary">Register Here</a>
                         </div>
                     </div>
                     
@@ -258,7 +293,7 @@
                             <h3 class="card-title">Emerging Infectious Diseases: The Lab's Role</h3>
                             <p class="card-text">Understand the critical role of laboratories in identifying and managing emerging infectious disease threats.</p>
                             <p><i class="fas fa-globe-americas mr-2"></i> <strong>Venue:</strong> Online Webinar</p>
-                            <a href="#" class="btn btn-primary">Register Now</a>
+                            <a href="#" class="btn btn-primary">Register Here</a>
                         </div>
                     </div>
                 </div>
@@ -298,19 +333,16 @@
     </section>
     <!-- Event and Notice Section End -->
 
-    <!-- About Remian Diagnostic and The team Section Start -->
+    <!-- About Remian Diagnostics and The team Section Start -->
     <section class="py-5" id="about">
         <div class="container">
-            <h2 class="section-title text-blue">About Remian Diagnostic</h2>
+            <h2 class="section-title text-blue">About Remian Diagnostics</h2>
             
             <div class="row mb-5">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h3 class="text-blue">Who We Are</h3>
                     <p>We are a team of passionate healthcare and education professionals committed to advancing the skills, knowledge, and professional growth of medical laboratory scientists, technologists, and technicians.</p>
                     <p>As an accredited CPD provider, our mission is to deliver high-quality, accessible, and evidence-based learning through interactive webinars and digital resources.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="static/img/profile_image.png" alt="Laboratory professionals working" class="img-fluid rounded">
                 </div>
             </div>
             
@@ -320,7 +352,7 @@
                         <div class="card-body text-center">
                             <div class="display-4 text-blue mb-3"><i class="fas fa-bullseye"></i></div>
                             <h4 class="card-title text-blue">Our Mission</h4>
-                            <p class="card-text">To enhance professional competence, promote best practices, and improve patient outcomes by providing accredited CPD opportunities for medical laboratory professionals worldwide.</p>
+                            <p class="card-text">To provide accredited CPD and webinars, medical supplies, and Health Professionals Recruitment.</p>
                         </div>
                     </div>
                 </div>
@@ -330,7 +362,7 @@
                         <div class="card-body text-center">
                             <div class="display-4 text-blue mb-3"><i class="fas fa-eye"></i></div>
                             <h4 class="card-title text-blue">Our Vision</h4>
-                            <p class="card-text">To be the leading CPD provider for laboratory professionals, recognized for innovation, quality, and impact on healthcare.</p>
+                            <p class="card-text">To be the leading hub for professional growth and innovation in medical laboratory science.</p>
                         </div>
                     </div>
                 </div>
@@ -340,13 +372,15 @@
                         <div class="card-body text-center">
                             <div class="display-4 text-blue mb-3"><i class="fas fa-tasks"></i></div>
                             <h4 class="card-title text-blue">Our Objectives</h4>
-                            <ul class="list-unstyled text-left">
-                                <li class="mb-2"><i class="fas fa-check text-blue mr-2"></i> Deliver accredited CPD webinars</li>
-                                <li class="mb-2"><i class="fas fa-check text-blue mr-2"></i> Ensure flexible, accessible learning</li>
-                                <li class="mb-2"><i class="fas fa-check text-blue mr-2"></i> Foster a global community</li>
-                                <li class="mb-2"><i class="fas fa-check text-blue mr-2"></i> Promote evidence-based practice</li>
-                                <li><i class="fas fa-check text-blue mr-2"></i> Support regulatory compliance</li>
-                            </ul>
+                            <ol class="objective-list text-left" style="counter-reset: item;">
+                                <li>Organize regular webinars on emerging and re-emerging trends in medical laboratory science</li>
+                                <li>Award KMLTTB accredited CPD points to practising laboratory technologists</li>
+                                <li>Develop online learning resources and training modules for continuous medical education</li>
+                                <li>Facilitate research presentations and case study discussions among professionals</li>
+                                <li>Build partnerships with hospitals, learning institutions, and regulatory bodies to improve practice standards</li>
+                                <li>To supply medical equipment and other essentials</li>
+                                <li>To be the industry leader in the recruitment of healthcare professionals</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -357,10 +391,10 @@
                 <!-- Director 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="card team-card">
-                        <img src="static/img/profile_image.png" class="card-img-top team-img" alt="Director 1">
+                        <img src="static/img/reagan.jpg" class="card-img-top team-img" alt="Director 1">
                         <div class="card-body">
-                            <h5 class="card-title">Dr. Sarah Johnson</h5>
-                            <p class="card-text text-muted">PhD in Clinical Pathology, MSc in Medical Microbiology</p>
+                            <h5 class="card-title">No title</h5>
+                            <p class="card-text text-muted">Director Marketing and Strategies</p>
                             <p class="card-text">"Empowering laboratory professionals with knowledge is the key to advancing healthcare outcomes globally."</p>
                             <a href="#" class="btn btn-outline-blue btn-sm">Know More</a>
                         </div>
@@ -370,10 +404,10 @@
                 <!-- Director 2 -->
                 <div class="col-md-4 mb-4">
                     <div class="card team-card">
-                        <img src="static/img/profile_image.png" class="card-img-top team-img" alt="Director 2">
+                        <img src="static/img/d1.jpg" class="card-img-top team-img" alt="Director 2">
                         <div class="card-body">
-                            <h5 class="card-title">Prof. Michael Chen</h5>
-                            <p class="card-text text-muted">MD, FCAP, Specialist in Laboratory Medicine</p>
+                            <h5 class="card-title">No title</h5>
+                            <p class="card-text text-muted">Director of Curriculum & Training</p>
                             <p class="card-text">"Continuous learning isn't just a requirement; it's our professional responsibility to patients and science."</p>
                             <a href="#" class="btn btn-outline-blue btn-sm">Know More</a>
                         </div>
@@ -383,10 +417,10 @@
                 <!-- Director 3 -->
                 <div class="col-md-4 mb-4">
                     <div class="card team-card">
-                        <img src="static/img/profile_image.png" class="card-img-top team-img" alt="Director 3">
+                        <img src="static/img/d2.jpg" class="card-img-top team-img" alt="Director 3">
                         <div class="card-body">
-                            <h5 class="card-title">Dr. Amina Okonjo</h5>
-                            <p class="card-text text-muted">PhD in Biomedical Sciences, MBA in Healthcare Management</p>
+                            <h5 class="card-title">No title</h5>
+                            <p class="card-text text-muted">Director of Operations, Accounts & Client Relations</p>
                             <p class="card-text">"The future of diagnostics lies in our ability to adapt, learn, and implement new technologies effectively."</p>
                             <a href="#" class="btn btn-outline-blue btn-sm">Know More</a>
                         </div>
@@ -395,7 +429,7 @@
             </div>
         </div>
     </section>
-    <!-- About Remian Diagnostic and The team Section End -->
+    <!-- About Remian Diagnostics and The team Section End -->
 
     <!-- Why Choose Us Section -->
     <section class="py-5 bg-light-blue">
@@ -418,6 +452,14 @@
                             <p>All our webinars are delivered by experienced laboratory professionals and educators.</p>
                         </div>
                     </div>
+                    
+                    <div class="media mb-4">
+                        <div class="mr-4 display-4 text-blue"><i class="fas fa-box-open"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Medical Supplies & Equipment</h5>
+                            <p>We supply high-quality medical equipment and essentials to healthcare facilities.</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="col-md-6">
@@ -436,6 +478,14 @@
                             <p>Receive documentation to support your professional portfolio and licensing requirements.</p>
                         </div>
                     </div>
+                    
+                    <div class="media mb-4">
+                        <div class="mr-4 display-4 text-blue"><i class="fas fa-user-md"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Healthcare Recruitment</h5>
+                            <p>We connect healthcare professionals with opportunities that match their skills and career goals.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -451,7 +501,7 @@
                     <p>Have questions about our webinars or services? Reach out to our team.</p>
                     
                     <div class="mb-3">
-                        <p><i class="fas fa-envelope mr-2 text-blue"></i> <strong>Email:</strong> info@remiandiagnostic.com</p>
+                        <p><i class="fas fa-envelope mr-2 text-blue"></i> <strong>Email:</strong> info@remiandiagnostics.com</p>
                     </div>
                     <div class="mb-3">
                         <p><i class="fas fa-phone mr-2 text-blue"></i> <strong>Phone:</strong> +254 7085600861</p>
@@ -513,7 +563,7 @@
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
                         <div class="card-body">
-                            You can register for any webinar by clicking the "Register Now" button on the webinar card. You'll be guided through a simple registration process.
+                            You can register for any webinar by clicking the "Register Here" button on the webinar card. You'll be guided through a simple registration process.
                         </div>
                     </div>
                 </div>
@@ -571,7 +621,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mb-4">
-                    <h5 class="text-white">Remian Diagnostic</h5>
+                    <h5 class="text-white">Remian Diagnostics</h5>
                     <p>Empowering Medical Laboratory Professionals Through Lifelong Learning.</p>
                 </div>
                 
@@ -609,7 +659,7 @@
             
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-left">
-                    <p class="mb-0">Copyright &copy; <span id="currentYear"></span> Remian Diagnostic - All Rights Reserved</p>
+                    <p class="mb-0">Copyright &copy; <span id="currentYear"></span> Remian Diagnostics - All Rights Reserved</p>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
                     <p class="mb-0">Powered By <a href="https://wa.me/+254708560861" target="_blank">Saul Mupalia</a></p>
